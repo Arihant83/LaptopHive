@@ -2,6 +2,8 @@
 
 **LaptopHive** is a simple, beginner-friendly laptop shopping website built using HTML and CSS. It features a clean design with a brown-and-cream color theme with separate pages for browsing laptops, exploring brands, viewing deals, and contacting the website.
 
+Website: https://laptophive.netlify.app/
+
 ## ✨ Features
 
 - **Home Page:** Welcome section, featured laptops, and product categories.
