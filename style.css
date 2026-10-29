@@ -1,0 +1,296 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f8f4ef;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: #5b3424;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 6%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #f4a261;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 18px;
+    font-size: 18px;
+}
+
+/* Hero section */
+.hero {
+    min-height: 400px;
+    background: linear-gradient(135deg, #5b3424, #8b5e3c);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button,
+.button {
+    display: inline-block;
+    background: #f4a261;
+    color: #222;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover,
+.button:hover {
+    background: #e8914d;
+}
+
+/* Common page sections */
+section {
+    padding: 55px 6%;
+}
+
+h2 {
+    text-align: center;
+    color: #5b3424;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.page-intro {
+    text-align: center;
+    padding: 45px 20px 10px;
+}
+
+.page-intro p {
+    line-height: 1.7;
+}
+
+/* Product cards */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000012;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card h3 {
+    color: #5b3424;
+    margin: 15px 0 8px;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.discount {
+    display: inline-block;
+    background: #329b53;
+    color: white;
+    padding: 5px 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.card button {
+    width: 100%;
+    background: #5b3424;
+    color: white;
+}
+
+/* Categories and general grids */
+.category-grid,
+.brand-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.category-card,
+.brand-card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #00000010;
+}
+
+.category-card h3,
+.brand-card h3 {
+    color: #5b3424;
+    margin: 12px 0;
+}
+
+.category-card p,
+.brand-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.category-icon {
+    font-size: 35px;
+}
+
+/* Contact form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    display: block;
+    margin: 15px 0 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form button {
+    margin-top: 18px;
+}
+
+/* Footer */
+footer {
+    background: #5b3424;
+    color: white;
+    padding: 40px 6% 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 30px;
+}
+
+footer h3,
+footer h4 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #f4a261;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #ffffff44;
+    margin-top: 30px;
+    padding-top: 18px;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+}
